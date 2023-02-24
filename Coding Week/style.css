@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,700;1,400&family=Dosis:wght@300&family=Shantell+Sans:wght@700&family=Yatra+One&display=swap");
+
+body {
+  margin: 0;
+  background: rgb(255, 255, 255);
+
+  overflow-x: hidden;
+}
+
+.navbar {
+  height: 50px;
+  width: 100vw;
+  background-color: rgb(114, 114, 114);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* gap: 10px; */
+  /* padding: 10px; */
+  padding-right: 30px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 0px 0px 4px rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: "Bitter", serif;
+  font-family: "Dosis", sans-serif;
+  font-family: "Shantell Sans", cursive;
+  font-family: "Yatra One", cursive;
+  font-size: 1.2rem;
+}
+.navbar a:hover {
+  color: red;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero img {
+  position: absolute;
+  object-fit: cover;
+  height: 300px;
+  width: 80vw;
+  filter: grayscale(0.75);
+  transition: all 0.4s;
+}
+
+.hero img:hover {
+  filter: grayscale(0);
+  width: 90vw;
+  height: 350px;
+  filter: contrast(1.5);
+}
+
+.hero h1 {
+  font-size: 4rem;
+  position: relative;
+  left: 500px;
+  top: 100px;
+  text-shadow: 0px 0px 4px rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: "Bitter", serif;
+  font-family: "Dosis", sans-serif;
+  font-family: "Shantell Sans", cursive;
+  font-family: "Yatra One", cursive;
+  z-index: 5;
+}
+
+.btn {
+  position: fixed;
+  z-index: 10;
+  border-radius: 50%;
+  background-color: red;
+  bottom: 20px;
+  right: 30px;
+  cursor: pointer;
+  padding: 15px;
+  font-weight: bold;
+  font-family: "Bitter", serif;
+  font-family: "Dosis", sans-serif;
+  font-family: "Shantell Sans", cursive;
+  font-family: "Yatra One", cursive;
+  opacity: 0.5;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.title1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Bitter", serif;
+  font-family: "Dosis", sans-serif;
+  font-family: "Shantell Sans", cursive;
+  font-family: "Yatra One", cursive;
+  margin-top: 150px;
+}
+.appuntamenti {
+  /* margin-top: 103px; */
+  display: flex;
+  width: 95vw;
+  overflow-x: auto;
+  gap: 5px;
+  height: 360px;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  box-shadow: 0 0 2px black;
+  transition: all 0.4s;
+  height: 300px;
+  min-width: 200px;
+  font-weight: bold;
+  font-family: "Bitter", serif;
+  font-family: "Dosis", sans-serif;
+  font-family: "Shantell Sans", cursive;
+  font-family: "Yatra One", cursive;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  border-color: darkred;
+}
+
+.title2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Bitter", serif;
+  font-family: "Dosis", sans-serif;
+  font-family: "Shantell Sans", cursive;
+  font-family: "Yatra One", cursive;
+  margin-top: 10px;
+}
+
+.appuntamenti::-webkit-scrollbar-track {
+  border: 1px solid #000;
+  padding: 2px 0;
+  background-color: rgb(102, 102, 102);
+}
+
+.appuntamenti::-webkit-scrollbar {
+  width: 10px;
+}
+
+.appuntamenti::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: black;
+  border: 1px solid #000;
+}
